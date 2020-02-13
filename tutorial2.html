@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
+    <!-- Latest compiled and minified CSS -->
+    <!-- link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> -->
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <span class="badge badge-danger">Warning</span>
+                <button type="button" class="btn btn-danger">
+                    Notification <span class="badge badge-info">5</span>
+                </button>
+
+                <p>
+                    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#contentId1"
+                        aria-expanded="false" aria-controls="contentId1">
+                        Show Data
+                    </button>
+
+                    <div class="collapse" id="contentId1">
+                        <div class="jumbotron">Here is the Data
+
+                        </div>
+
+                    </div>
+
+
+                    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#contentId"
+                        aria-expanded="false" aria-controls="contentId">
+                        Show My Data
+                    </button>
+
+                    <div class="collapse" id="contentId">
+                        Here is the Data
+                    </div>
+                </p>
+            </div>
+        </div>
+
+        <div class="btn-group">
+
+            <button type="button" class="btn btn-primary">Home
+            </button>
+            <button type="button" class="btn btn-primary">Blog
+            </button>
+            <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                Dropdown button<span class="glyphicon glyphicon-plus"></span>
+            </button>
+            <ul class="dropdown-menu" role="Menu">
+                <li><a class="dropdown-item" href="#">menu1</a></li>
+                <li><a class="dropdown-item" href="#">menu2</a></li>
+                <li><a class="dropdown-item" href="#">menu3</a></li>
+            </ul>
+
+
+        </div>
+        <br><br>
+        <div class="progress">
+            <div class="progress-bar id="progress" role="progressbar" aria-valuenow="25" aria-valuemin="0"
+                aria-valuemax="100" style="width:50%">
+                Loading
+            </div>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+    <script>
+        var i=0, howManyTimes = 100;
+        function f() {
+        console.log(i+20)
+        var a = i+ 20;
+        document.getElementById('progress').style.width= a +'%';
+        i++;
+        if(i < howManyTimes) { setTimeout(f, 1000); } } f();
+     </script>
+</body>
+</html>
